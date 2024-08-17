@@ -3,18 +3,17 @@ import React from "react";
 export const Matriz = () => {
   return (
     <>
-      <div style={{ border: "1px solid black" }}>
-        Matriz
-        <div style={{ border: "1px solid black" }}>
+      <div className="divMatrizContainer">
+        <div className="divMatriz1">
           {" "}
-          Urgente e importante
+          <h2> Urgente e importante</h2>
           <ol>
             <li></li>
             <li></li>
             <li></li>
           </ol>
         </div>
-        <div>
+        <div className="divMatriz2">
           Urgente y no importante
           <ol>
             <li></li>
@@ -22,8 +21,8 @@ export const Matriz = () => {
             <li></li>
           </ol>
         </div>
-        <div>No urgente e importante</div>
-        <div>No urgenete y no importante</div>
+        <div className="divMatriz3">No urgente e importante</div>
+        <div className="divMatriz4">No urgenete y no importante</div>
       </div>
     </>
   );
