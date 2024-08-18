@@ -8,7 +8,7 @@ export const CuadranteUNI = ({ tasks, deleteTask }) => {
     console.log("borrando tarea");
   };
   return (
-    <div className="divMatriz2">
+    <div className="divMatriz3">
       <h2>Urgente y no importante</h2>
       {filteredTasks.map((task, index) => (
         <div className="divTask" key={index}>
