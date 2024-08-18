@@ -1,28 +1,17 @@
 import React from "react";
+import { CuadranteUI } from "./CuadranteUI";
+import { CuadranteUNI } from "./CuadranteUNI";
+import { CuadranteNUI } from "./CuadranteNUI";
+import { CuadranteNUNI } from "./CuadranteNUNI";
 
-export const Matriz = () => {
+export const Matriz = ({ tasks, deleteTask }) => {
   return (
     <>
       <div className="divMatrizContainer">
-        <div className="divMatriz1">
-          {" "}
-          <h2> Urgente e importante</h2>
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-        <div className="divMatriz2">
-          Urgente y no importante
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-        <div className="divMatriz3">No urgente e importante</div>
-        <div className="divMatriz4">No urgenete y no importante</div>
+        <CuadranteUI tasks={tasks} deleteTask={deleteTask} />
+        <CuadranteUNI tasks={tasks} deleteTask={deleteTask} />
+        <CuadranteNUI tasks={tasks} deleteTask={deleteTask} />
+        <CuadranteNUNI tasks={tasks} deleteTask={deleteTask} />
       </div>
     </>
   );
