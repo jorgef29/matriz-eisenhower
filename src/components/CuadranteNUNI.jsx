@@ -9,7 +9,7 @@ export const CuadranteNUNI = ({ tasks, deleteTask }) => {
   };
   return (
     <div className="divMatriz4">
-      <h2>No urgente y no importante</h2>
+      <h2>No importante y no urgente</h2>
       {filteredTasks.map((task, index) => (
         <div className="divTask" key={index}>
           <div className="divTaskTxt">• {task.description}</div>
