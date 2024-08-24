@@ -22,7 +22,7 @@ export const ListaToDo = ({
   };
   const handleAddUNI = (index) => {
     fnAddUNI(index);
-    console.log("añadiendo UNI");
+    console.log("añadiendo urgente y no importante");
   };
   const handleAddNUI = (index) => {
     fnAddNUI(index);
@@ -54,7 +54,7 @@ export const ListaToDo = ({
               <button
                 className="btnUNI"
                 onClick={() => {
-                  handleAddUNI(
+                  handleAddNUI(
                     tasks.findIndex((t) => t.description === task.description)
                   );
                 }}
@@ -64,7 +64,7 @@ export const ListaToDo = ({
               <button
                 className="btnNUI"
                 onClick={() => {
-                  handleAddNUI(
+                  handleAddUNI(
                     tasks.findIndex((t) => t.description === task.description)
                   );
                 }}
