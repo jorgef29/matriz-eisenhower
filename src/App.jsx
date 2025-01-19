@@ -4,6 +4,7 @@ import { ListaToDo } from "./components/ListaToDo";
 import { Matriz } from "./components/Matriz";
 import { InputToDo } from "./components/InputToDo";
 
+//TODO: Fix bug when deleting tasks
 function App() {
   const [tasks, setTasks] = useState([]);
 

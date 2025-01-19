@@ -8,7 +8,7 @@ export const CuadranteNUI = ({ tasks, deleteTask }) => {
     console.log("borrando tarea");
   };
   return (
-    <div className="divMatriz2">
+    <div className="divMatriz2 scrollableContainer">
       <h2>Importante y no urgente</h2>
       {filteredTasks.map((task, index) => (
         <div className="divTask" key={index}>
